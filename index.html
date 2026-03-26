@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>SVOYA Nail Studio — Манікюр, Педикюр, Nail Art</title>
+    <meta name="description" content="SVOYA Nail Studio — студія манікюру та педикюру у вашому місті. Елегантний простір, професійні майстри, індивідуальний підхід до кожного клієнта.">
+
+    <!-- Security -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; frame-src 'none'; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ═══════════ HEADER ═══════════ -->
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <a href="#hero" class="header-logo" aria-label="SVOYA — на головну">
+                <img src="assets/svoya nail-01.png" alt="SVOYA Nail Studio" width="120" height="120">
+            </a>
+            <nav class="main-nav" id="main-nav" aria-label="Головне меню">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">Про нас</a></li>
+                    <li><a href="#services" class="nav-link">Послуги</a></li>
+                    <li><a href="#gallery" class="nav-link">Галерея</a></li>
+                    <li><a href="#team" class="nav-link">Команда</a></li>
+                    <li><a href="#reviews" class="nav-link">Відгуки</a></li>
+                    <li><a href="#contact" class="nav-link">Контакти</a></li>
+                </ul>
+            </nav>
+            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="btn btn--header btn--book" id="cta-book-header" data-booking-url="https://instagram.com/">
+                Записатися
+            </a>
+            <button class="hamburger" id="hamburger" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="main-nav">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ═══════════ HERO ═══════════ -->
+    <section class="hero" id="hero">
+        <video class="hero-video" autoplay muted loop playsinline preload="none" aria-hidden="true">
+            <source src="assets/1.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-animate="fade-up">
+            <img src="assets/svoya nail-01.png" alt="SVOYA Nail Studio" class="hero-logo" width="260" height="260">
+            <p class="hero-tagline">Make your day here!</p>
+            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--book" id="cta-book-hero" data-booking-url="https://instagram.com/">
+                Записатися
+            </a>
+        </div>
+        <div class="hero-scroll-hint" aria-hidden="true">
+            <span class="scroll-line"></span>
+        </div>
+    </section>
+
+    <!-- ═══════════ ABOUT ═══════════ -->
+    <section class="section about" id="about">
+        <div class="container about-grid">
+            <div class="about-image" data-animate="fade-right">
+                <div class="arch-frame">
+                    <img src="assets/salon_interior/photo_2026-03-26_00-44-48.jpg" alt="Інтер'єр студії SVOYA — зона рецепції" loading="lazy">
+                </div>
+            </div>
+            <div class="about-text" data-animate="fade-left">
+                <span class="section-label">Про студію</span>
+                <h2 class="section-title">Простір, створений для вас</h2>
+                <p>
+                    SVOYA — це більше, ніж nail-студія. Це місце, де елегантний дизайн поєднується
+                    з індивідуальним підходом. Ми створили простір, у якому кожна деталь — від м'якого
+                    освітлення до вишуканих матеріалів — працює на ваш комфорт і натхнення.
+                </p>
+                <p>
+                    Наша філософія — це увага до деталей, стерильність на найвищому рівні
+                    та використання лише преміальних матеріалів від провідних брендів.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ SERVICES ═══════════ -->
+    <section class="section services" id="services">
+        <div class="container">
+            <span class="section-label" data-animate="fade-up">Що ми пропонуємо</span>
+            <h2 class="section-title" data-animate="fade-up">Наші послуги</h2>
+            <div class="services-grid">
+                <article class="service-card" data-animate="fade-up">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                            <ellipse cx="24" cy="14" rx="8" ry="12"/>
+                            <line x1="24" y1="26" x2="24" y2="44"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Манікюр</h3>
+                    <p>Класичний, апаратний та комбінований манікюр з покриттям гель-лаком або без.</p>
+                </article>
+                <article class="service-card" data-animate="fade-up">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                            <rect x="10" y="8" width="28" height="32" rx="14"/>
+                            <line x1="18" y1="28" x2="30" y2="28"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Педикюр</h3>
+                    <p>Апаратний педикюр з увагою до здоровʼя ваших стоп. Ідеальний результат та комфорт.</p>
+                </article>
+                <article class="service-card" data-animate="fade-up">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                            <path d="M12 36 Q24 4 36 36"/>
+                            <circle cx="24" cy="20" r="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Nail Art</h3>
+                    <p>Авторський дизайн нігтів: від мінімалістичних акцентів до складних художніх композицій.</p>
+                </article>
+                <article class="service-card" data-animate="fade-up">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                            <path d="M14 40 V18 Q14 8 24 8 Q34 8 34 18 V40"/>
+                            <line x1="14" y1="24" x2="34" y2="24"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Нарощування</h3>
+                    <p>Гелеве та акрилове нарощування нігтів будь-якої довжини та форми.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ GALLERY ═══════════ -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <span class="section-label" data-animate="fade-up">Наш простір</span>
+            <h2 class="section-title" data-animate="fade-up">Галерея</h2>
+            <div class="gallery-grid" id="gallery-grid">
+                <figure class="gallery-item gallery-item--tall" data-animate="fade-up">
+                    <img src="assets/salon_interior/photo_2026-03-26_00-44-48.jpg" alt="Інтер'єр SVOYA — зона рецепції" loading="lazy">
+                </figure>
+                <figure class="gallery-item" data-animate="fade-up">
+                    <img src="assets/salon_interior/photo_2026-03-26_00-44-30.jpg" alt="Робоча зона з арочними панелями" loading="lazy">
+                </figure>
+                <figure class="gallery-item" data-animate="fade-up">
+                    <img src="assets/salon_interior/photo_2026-03-26_00-44-38.jpg" alt="Простір студії — вид на робочі столи" loading="lazy">
+                </figure>
+                <figure class="gallery-item gallery-item--wide" data-animate="fade-up">
+                    <img src="assets/salon_interior/photo_2026-03-26_00-44-44.jpg" alt="Зона очікування та дзеркала" loading="lazy">
+                </figure>
+                <figure class="gallery-item" data-animate="fade-up">
+                    <img src="assets/salon_interior/photo_2026-03-26_00-44-26.jpg" alt="Деталі інтер'єру" loading="lazy">
+                </figure>
+                <figure class="gallery-item" data-animate="fade-up">
+                    <img src="assets/salon_interior/photo_2026-03-26_00-44-23.jpg" alt="Елегантний інтер'єр" loading="lazy">
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ TEAM ═══════════ -->
+    <section class="section team" id="team">
+        <div class="container">
+            <span class="section-label" data-animate="fade-up">Професіонали</span>
+            <h2 class="section-title" data-animate="fade-up">Наша команда</h2>
+            <div class="team-grid">
+                <article class="team-card" data-animate="fade-up">
+                    <div class="team-photo">
+                        <img src="assets/salon_interior/photo_2026-03-26_00-44-41.jpg" alt="Майстер Олена" loading="lazy">
+                    </div>
+                    <h3 class="team-name">Олена</h3>
+                    <span class="team-role">Nail-майстер</span>
+                    <p class="team-bio">Понад 5 років досвіду. Спеціалізується на класичному та апаратному манікюрі, авторському дизайні.</p>
+                </article>
+                <article class="team-card" data-animate="fade-up">
+                    <div class="team-photo">
+                        <img src="assets/salon_interior/photo_2026-03-26_00-44-34.jpg" alt="Майстер Анна" loading="lazy">
+                    </div>
+                    <h3 class="team-name">Анна</h3>
+                    <span class="team-role">Nail-майстер</span>
+                    <p class="team-bio">Експерт з нарощування та педикюру. Постійно вдосконалює техніку на міжнародних курсах.</p>
+                </article>
+                <article class="team-card" data-animate="fade-up">
+                    <div class="team-photo">
+                        <img src="assets/salon_interior/photo_2026-03-26_00-43-59.jpg" alt="Майстер Вікторія" loading="lazy">
+                    </div>
+                    <h3 class="team-name">Вікторія</h3>
+                    <span class="team-role">Nail-майстер</span>
+                    <p class="team-bio">Майстер nail-арту та мінімалістичного дизайну. Створює неповторні образи для кожної клієнтки.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ REVIEWS ═══════════ -->
+    <section class="section reviews" id="reviews">
+        <div class="container">
+            <span class="section-label" data-animate="fade-up">Що кажуть клієнти</span>
+            <h2 class="section-title" data-animate="fade-up">Відгуки</h2>
+            <div class="reviews-grid">
+                <blockquote class="review-card" data-animate="fade-up">
+                    <div class="review-stars" aria-label="5 з 5 зірок">★★★★★</div>
+                    <p class="review-text">
+                        «Неймовірна атмосфера та професійний підхід! Манікюр тримається бездоганно вже третій тиждень. Дуже рекомендую!»
+                    </p>
+                    <footer class="review-author">
+                        <span class="review-name">Марія К.</span>
+                        <span class="review-date">Березень 2026</span>
+                    </footer>
+                </blockquote>
+                <blockquote class="review-card" data-animate="fade-up">
+                    <div class="review-stars" aria-label="5 з 5 зірок">★★★★★</div>
+                    <p class="review-text">
+                        «Студія вражає своїм інтер'єром — хочеться повертатися знову і знову. Майстри уважні до деталей і дуже привітні.»
+                    </p>
+                    <footer class="review-author">
+                        <span class="review-name">Олександра Д.</span>
+                        <span class="review-date">Лютий 2026</span>
+                    </footer>
+                </blockquote>
+                <blockquote class="review-card" data-animate="fade-up">
+                    <div class="review-stars" aria-label="5 з 5 зірок">★★★★★</div>
+                    <p class="review-text">
+                        «Нарешті знайшла свою студію! Ідеальна чистота, преміальні матеріали, і результат завжди перевершує очікування.»
+                    </p>
+                    <footer class="review-author">
+                        <span class="review-name">Ірина В.</span>
+                        <span class="review-date">Січень 2026</span>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ CONTACT ═══════════ -->
+    <section class="section contact" id="contact">
+        <div class="container contact-grid">
+            <div class="contact-info" data-animate="fade-right">
+                <span class="section-label">Зв'яжіться з нами</span>
+                <h2 class="section-title">Контакти</h2>
+                <address class="contact-details">
+                    <div class="contact-row">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>вул. Прикладна, 10, Київ, 01001</span>
+                    </div>
+                    <div class="contact-row">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07A19.5 19.5 0 0 1 5.09 12.9 19.86 19.86 0 0 1 2 4.18 2 2 0 0 1 3.99 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.68 2.34a2 2 0 0 1-.45 2.11L8.09 9.3a16 16 0 0 0 6.6 6.6l1.13-1.13a2 2 0 0 1 2.11-.45c.74.32 1.53.55 2.34.68a2 2 0 0 1 1.72 2z"/></svg>
+                        <a href="tel:+380501234567">+380 50 123 45 67</a>
+                    </div>
+                    <div class="contact-row">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+                        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">@svoya.nailstudio</a>
+                    </div>
+                </address>
+                <div class="contact-hours">
+                    <h3>Графік роботи</h3>
+                    <p>Пн — Сб: 09:00 — 20:00</p>
+                    <p>Нд: вихідний</p>
+                </div>
+            </div>
+            <div class="contact-cta" data-animate="fade-left">
+                <div class="cta-card">
+                    <h3>Готові до перетворення?</h3>
+                    <p>Запишіться на процедуру просто зараз через наш Instagram.</p>
+                    <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--book btn--lg" id="cta-book-contact" data-booking-url="https://instagram.com/">
+                        Записатися
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="assets/svoya nail-01.png" alt="SVOYA" width="80" height="80">
+                <span class="footer-tagline">Make your day here!</span>
+            </div>
+            <div class="footer-socials">
+                <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+                </a>
+            </div>
+            <p class="footer-copy">&copy; 2026 SVOYA Nail Studio. Усі права захищено.</p>
+        </div>
+    </footer>
+
+    <!-- ═══════════ LIGHTBOX ═══════════ -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Перегляд зображення" hidden>
+        <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Закрити">&times;</button>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
