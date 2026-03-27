@@ -112,6 +112,12 @@ address {
     margin-bottom: 2.5rem;
 }
 
+.brand-text {
+    font-family: var(--ff-heading);
+    font-weight: 600;
+    font-size: 1.05em;
+}
+
 /* ── Buttons ── */
 .btn {
     display: inline-flex;
@@ -311,7 +317,7 @@ address {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    margin-top: 20vh;
+    margin-top: 10rem;
 }
 
 .hero-logo {
