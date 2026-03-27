@@ -1015,30 +1015,28 @@ address {
 
 .footer-socials {
     display: flex;
-    gap: 1rem;
+    justify-content: center;
+    gap: 30px;
+    padding: 1.5rem 0;
 }
 
 .social-link {
-    width: 40px;
-    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 50%;
-    color: var(--clr-taupe-l);
-    transition: all var(--transition);
+    color: var(--clr-gold);
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-link:hover {
-    border-color: var(--clr-gold);
-    color: var(--clr-gold);
+    color: var(--clr-surface);
     transform: translateY(-2px);
 }
 
 .social-link svg {
-    width: 18px;
-    height: 18px;
+    width: 32px;
+    height: 32px;
+    transition: inherit;
 }
 
 .footer-copy {
