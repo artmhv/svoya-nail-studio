@@ -161,6 +161,10 @@ address {
     font-size: var(--fs-base);
 }
 
+.btn--mobile-header {
+    display: none;
+}
+
 /* ══════════════════════════════
    HEADER
    ══════════════════════════════ */
@@ -307,6 +311,7 @@ address {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+    margin-top: 20vh;
 }
 
 .hero-logo {
@@ -623,6 +628,15 @@ address {
     margin-bottom: 2rem;
 }
 
+.school-badge span.badge-text {
+    font-family: var(--ff-heading);
+    font-size: var(--fs-md);
+    font-style: italic;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
 .school-badge svg {
     width: 16px;
     height: 16px;
@@ -929,6 +943,15 @@ address {
     color: var(--clr-burgundy);
 }
 
+.contact-row a.map-link {
+    color: var(--clr-body);
+}
+
+.contact-row a.map-link:hover {
+    color: var(--clr-gold);
+    text-decoration: underline;
+}
+
 .contact-hours h3 {
     font-family: var(--ff-heading);
     font-size: var(--fs-lg);
@@ -1169,8 +1192,26 @@ address {
         display: none;
     }
 
+    .btn--mobile-header {
+        display: inline-flex;
+        padding: 0.5rem 1.25rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        background: var(--clr-dark);
+        color: var(--clr-surface);
+        border-radius: 50px;
+        order: 0;
+    }
+
+    .header-logo {
+        order: 1;
+    }
+
     .hamburger {
         display: flex;
+        order: -1;
     }
 
     .main-nav {
